@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Page for Roger Sentongo</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+
+
+  <body>
+
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
+    <nav>
+      <!-- We need to add links to projects.html, contact.html, and
+        testimonials.html -->
+      <p><a href="projects.html"> Projects </a> </p>
+      <p><a href="contact.html"> Contact </a> </p>
+      <p><a href="testimonials.html"> Testimonials </a> </p>
+      <p><a href="index.html"> Home </a> </p>
+      <div class="clear-float"></div>
+    </nav>
+
+    <h1> <em>Information Request</em> </h1>
+
+    <form action="submit.html" method="post">
+
+      <label for="firstName"> First Name: </label> <br />
+      <input type="text" name="firstName" id="firstName"> <br />
+
+      <label for="lastName"> Last Name: </label> <br />
+      <input type="text" name="lastName" id="lastName"> <br />
+
+      <label for="phone"> Phone: </label> <br />
+      <input type="text" name="phone" id="phone"> <br />
+
+      <label for="contact"> Best time to call</label> <br />
+      <select id="contact" name="contact">
+        <option value="default"> --Select One--</option>
+        <option value="morning"> Morning (8AM to 11 AM EST) </option>
+        <option value="afternoon"> Afternoon (12PM to 5PM EST)</option>
+        <option value="evening"> Evening (5PM to 8PM EST)</option>
+
+      </select>
+
+      <fieldset>
+        <legend>I am interested in (check all that apply):</legend> <br />
+
+        <input type="checkbox" name="interest" id="frontend" value="frontend">
+        <label for="frontend"> Front End Web Development</label> <br />
+
+        <input type="checkbox" name="interest" id="backend" value="backend">
+        <label for="backend"> Back End Web Development</label> <br />
+
+        <input type="checkbox" name="interest" id="database" value="database">
+        <label for="database"> Database</label> <br />
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend>I have filled in the client questionaire form</legend>
+        <label for="choice1">Yes</label> <br />
+        <input type="radio" name="questionaire" id="choice1" value="yes"> <br />
+        <label for="choice2"> No</label> <br />
+        <input type="radio" name="questionaire" id="choice2" value="no">
+      </fieldset>
+
+      <label for="info"> Additional Information </label> <br />
+      <textarea name="info" id="info" rows="8" cols="80"></textarea> <br />
+
+      <input type="submit" name="submit" value="Submit">
+
+
+    </form>
+
+    <footer>
+      <p> &copy; 2021 Roger Sentongo. All rights reserved. </p>
+    </footer>
+
+  </body>
+</html>

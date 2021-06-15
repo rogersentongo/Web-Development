@@ -1,0 +1,17 @@
+body{
+  background-color: lightblue;
+}
+
+header, footer{
+  background-color: darkgray;
+  color: white;
+}
+
+.border {
+
+  border: thick solid blue;
+}
+
+#pastexperiences{
+  border: thick dashed orange;
+}
